@@ -1,5 +1,5 @@
 {% set name = "polar2grid" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/polar2grid-{{ version }}.tar.gz
-  sha256: 1a46dabac7b90f97000635b0878c45ea89183e2f77afc4d8ea7b7df9fcd76a60
+  sha256: 4b1b177d5cdcada04bd63a572361bb13580d544c13e8fe7864d491022253a698
 
 build:
   number: 0
