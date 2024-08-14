@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.10
   run:
     - h5py
     - netcdf4
-    - python >=3.8
+    - python >=3.10
     - rasterio
     - satpy
     - setuptools
