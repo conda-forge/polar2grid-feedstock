@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "polar2grid" %}
 {% set version = "3.2.0" %}
 
@@ -21,15 +22,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
-    - setuptools
+    - python {{ python_min }}
+    - hatchling
   run:
     - h5py
     - netcdf4
-    - python >=3.10
+    - python >={{ python_min }}
     - rasterio
     - satpy
-    - setuptools
 
 test:
   imports:
@@ -41,6 +41,7 @@ test:
     - geo2grid --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.ssec.wisc.edu/software/polar2grid/
